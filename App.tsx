@@ -44,6 +44,7 @@ function App(): React.JSX.Element {
           )}
           keyExtractor={(item, index) => index.toString()}
           contentContainerStyle={styles.items}
+          ListEmptyComponent={<Text>Please add tasks.</Text>}
         />
       </View>
       </ScrollView>
